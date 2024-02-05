@@ -26,8 +26,8 @@ function App() {
           <h1 className='border-2 rounded border-solid border-white px-1 text-center text-white font-bold'>IMC CALC</h1>
         </div>
       </header>
-      <main className='flex flex-col md:flex-row grid-cols-1  md:w-4/5 gap-10 md:m-auto'>
-        <div className='w-screen h-full text-center'>
+      <main className='flex flex-col md:flex-row grid-cols-1  md:w-4/5 gap-10 md:m-auto '>
+        <div className='w-screen h-full text-center border-4 border-cyan-800 py-10 p-5'>
           <h2 className=' text-2xl text-center mb-10'>Calcule seu IMC</h2>
           <p className='text-lg text-gray-500 text-center mb-10'>Insira seus dados solicitados para saber o seu IMC!</p>
           <input onChange={e => setHeight(parseFloat(e.target.value))} type='number' placeholder='Insira a sua altura EX: 1.80 (em metros)' className='w-9/12 md:w-full outline-none border-solid border-b-2 border-cyan-700 mb-8 rounded-xl p-1 text-center text-sm md:text-lg'></input>
