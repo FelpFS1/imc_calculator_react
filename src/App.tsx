@@ -27,7 +27,7 @@ function App() {
         </div>
       </header>
       <main className='flex flex-col md:flex-row grid-cols-1  md:w-4/5 gap-10 md:m-auto '>
-        <div className='w-screen h-full text-center border-4 border-cyan-800 py-20 p-5'>
+        <div className='w-11/12 h-full m-auto text-center border-4 border-cyan-800 py-20 p-5'>
           <h2 className=' text-2xl text-center mb-10'>Calcule seu IMC</h2>
           <p className='text-lg text-gray-500 text-center mb-10'>Insira seus dados solicitados para saber o seu IMC!</p>
           <input onChange={e => setHeight(parseFloat(e.target.value))} type='number' placeholder='Insira a sua altura EX: 1.80 (em metros)' className='w-9/12 md:w-full outline-none border-solid border-b-2 border-cyan-700 mb-8 rounded-xl p-1 text-center text-sm md:text-lg'></input>
@@ -35,7 +35,7 @@ function App() {
           <button onClick={calcYourImc} className='flex justify-center w-2/4  bg-cyan-800 p-1 text-white font-bold m-auto mt-7 rounded-lg'>Calcular</button>
         </div>
         {!toShow &&
-        <div className='w-screen h-full grid grid-cols-2 gap-2'>
+        <div className='w-11/12 h-full m-auto h-full grid grid-cols-2 gap-2'>
           {situation.map((value,key)=>{
             return <Card key={key} item={value}></Card>
           })}
